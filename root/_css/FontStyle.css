@@ -1,0 +1,78 @@
+
+html 
+{
+    font-family: Verdana;
+}
+
+.indentPar
+{
+    text-indent: 50px;
+}
+
+.padded 
+{
+    padding: 15px;
+}
+
+.bold 
+{
+    font-weight: bold;
+}
+
+.italic 
+{
+    font-style: italic;
+}
+
+.underline 
+{
+    text-decoration: underline;
+}
+
+.responImage 
+{
+    width: 100%;
+    height: auto;
+}
+
+.centerOn500 
+{
+    max-width: 500px;
+    margin: auto;
+}
+
+.centerOn700 {
+    max-width: 700px;
+    margin: auto;
+}
+
+.centerText 
+{
+    text-align: center;
+}
+
+.rightText {
+    text-align: right;
+}
+
+.TopHeader {
+    padding: 45px;
+    text-align: center;
+    background: radial-gradient(#00ffff, #0055ff);
+    color: white;
+}
+
+.TopHeader h1 {
+    font-size: 40px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.footer p{
+    font-size: large;
+}

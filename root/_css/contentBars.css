@@ -1,0 +1,24 @@
+
+.contentHold{
+    display: flex;
+    flex-warp: wrap;
+}
+
+.side{
+    flex: 30%;
+    background: #f1f1f1;
+    padding: 20px;
+}
+
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .contentHold {
+        flex-direction: column;
+    }
+}

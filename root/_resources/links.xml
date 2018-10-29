@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<links>
+  <h class="1">Home</h>
+  <h class="2">General</h>
+  
+  <link>
+    <href>https://www.rocketlawyer.com/</href>
+    <name>Offical Paperworks</name>
+  </link>
+  <link>
+    <href>https://www.jaapsch.net/puzzles/</href>
+    <name>All The Cubes</name>
+  </link>
+  <link>
+    <href>https://solvethecube.com/speedcubing</href>
+    <name>Speed Cubing</name>
+  </link>
+  
+  <h class="1">School</h>
+  <h class="2">General</h>
+  
+  <link>
+    <href>http://www.wacohi.net/</href>
+    <name>School Website</name>
+  </link>
+  
+  <h class="2">Music</h>
+  
+  <link>
+    <href>https://www.musictheory.net/</href>
+    <name>Music Theory</name>
+  </link>
+  <link>
+    <href>https://www.musictheory.net/</href>
+    <name>More Music Theory</name>
+  </link>
+  
+  <h class="2">English</h>
+  
+  <link>
+    <href>https://owl.english.purdue.edu/owl/resource/747/01/</href>
+    <name>MLA Owl</name>
+  </link>
+  
+  <h class="2">Science</h>
+  
+  <link>
+	<href>https://ptable.com/</href>
+	<name>Periodic Table</name>
+  </link>
+  
+  <h class="1">Other</h>
+  <h class="2">Programing and Web Design</h>
+  <h class="3">Website Making</h>
+  
+  <link>
+    <href>https://www.w3schools.com/</href>
+    <name>Web Design</name>
+  </link>
+  <link>
+    <href>https://www.w3schools.com/jsref</href>
+    <name>JavaScript &amp; HTML DOM Reference</name>
+  </link>
+  <link>
+    <href>https://www.w3schools.com/cssref/default.asp</href>
+    <name>CSS Reference</name>
+  </link>
+  <link>
+    <href>https://www.toptal.com/designers/htmlarrows/</href>
+    <name>HTML Symbol Reference</name>
+  </link>
+  
+  <h class="2">Gaming</h>
+  <h class="3">Elite: Dangerous</h>
+
+  <link>
+    <href>https://coriolis.io/</href>
+    <name>Shipyard</name>
+  </link>
+  <link>
+    <href>https://eddb.io/</href>
+    <name>Elite Database</name>
+  </link>
+  
+  <h class="3">Factorio</h>
+  
+  <link>
+    <href>https://kirkmcdonald.github.io/calc.html#items=s</href>
+    <name>Factorio Calculator</name>
+  </link>
+  <link>
+    <href>https://wiki.factorio.com/</href>
+    <name>Factorio Wiki</name>
+  </link>
+  
+  <h class="3">Rimworld</h>
+  
+  <link>
+    <href>http://rimworldwiki.com/</href>
+    <name>Rimworld Wiki</name>
+  </link>
+</links>
