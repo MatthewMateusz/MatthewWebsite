@@ -1,0 +1,32 @@
+
+a.disabled {
+    color: red;
+    cursor: default;
+}
+
+a.disabled:hover{
+	color: red;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+        color: #666666;
+}
+
+.information {
+	background-color: #eee;
+	padding: 15px;
+}
+
+a.default{
+	color: blue;
+	text-decoration: underline;
+}
+
+a.default:visited{
+	color: purple;
+}
