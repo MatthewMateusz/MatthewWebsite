@@ -24,6 +24,10 @@ div.active {
     color: #0f0f0f;
 }
 
+.dropdown.active {
+	color: #0f0f0f;
+}
+
 .topnav .icon {
     display: none;
 }
