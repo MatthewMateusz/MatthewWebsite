@@ -58,7 +58,7 @@ html
 .TopHeader {
     padding: 45px;
     text-align: center;
-    background: radial-gradient(#00ffff, #0055ff);
+    background: linear-gradient(to bottom right, #cc00cc, #00ffff);
     color: white;
 }
 
