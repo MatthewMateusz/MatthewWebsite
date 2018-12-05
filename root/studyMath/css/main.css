@@ -5,8 +5,7 @@
 
 .bannerImage{
 	background-image: url("../rsrc/img/mainBanner1.jpeg");
-	filter: blur(4px);
-	-webkit-filter: blur(4px);
+
 	height: 100%;
 	
 	background-attachment: fixed;
