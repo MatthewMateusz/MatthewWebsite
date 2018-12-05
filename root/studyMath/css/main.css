@@ -13,6 +13,9 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	
+	animation-name: putInFocus;
+	animation-duration: 4s;
+	
 }
 
 .bannerText{
@@ -30,5 +33,17 @@
 	width: 80%;
 	padding: 20px;
 	text-align: center;
+}
+
+@keyframes putInFocus {
+	from {
+		filter: blur(16px);
+		-webkit-filter: blur(16px);
+	}
+	
+	to {
+		filter: none;
+		-webkit-filter: none;
+	}
 }
 
