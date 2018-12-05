@@ -23,6 +23,10 @@
     width: 20%;
 }
 
+.row{
+	background-color: #070707;
+}
+
 .row:after {
     content: "";
     display: table;
