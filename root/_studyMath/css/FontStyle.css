@@ -9,6 +9,18 @@ body, html {
 	height: 100%;
 }
 
+a {
+	color: cyan;
+}
+
+a:visited {
+	color: red;
+}
+
+a:active {
+	color: lightgrey;
+}
+
 .indentPar
 {
     text-indent: 50px;
@@ -19,15 +31,15 @@ body, html {
 }
 
 .title {
-	font-size: 60px;
+	font-size: 400%;
 }
 
 .subtitle{
-	font-size: 30px;
+	font-size: xx-large;
 }
 
 .header {
-	font-size: 60px;
+	font-size: xx-large;
 }
 
 .footer {
@@ -41,14 +53,53 @@ body, html {
     font-size: large;
 }
 
+.fitPage{
+	max-width: 700px;
+	margin: auto;
+	padding: 20px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.underline {
+	text-decoration-line: underline;
+}
+
+
 
 @media (max-width: 700px) {
     .header {
-		font-size: 30px;
+		font-size: large;
 	}
 	
 	.title {
-		font-size: 30px;
+		font-size: xx-large;
 	}
+}
+
+ul.expandedList li {
+	margin-bottom: 20px;
+}
+
+.hangingIndent {
+	padding-left: 50px;
+	text-indent: -50px;
+}
+
+.centerHold {
+	position: relative;
+}
+
+.centerInfo {
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	transform translate(0%, -50%);
 }
 
