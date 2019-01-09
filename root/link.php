@@ -63,10 +63,10 @@
 
 
         <?php
-        $xml= simplexml_load_file("_resources/projects.xml") or die ("F");
+        $xml= simplexml_load_file("_resources/links.xml") or die ('F');
        $rowOpened = false;
        
-	if ($xml != F) 
+	if ($xml != "F") 
 	{
 		foreach ($xml->children() as $child) 
         		{
