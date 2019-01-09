@@ -11,7 +11,7 @@
         <description>
             This project is a video game for the PC. This game gets its inspiration from 
             &lt;a href="https://www.factorio.com/"&gt;Factorio&lt;/a&gt;, 
-            &lt;a href="https://lincity.sourceforge.net/"&gt;Lincity&lt;/a&gt;, and 
+            &lt;a href="http://lincity.sourceforge.net/"&gt;Lincity&lt;/a&gt;, and 
             &lt;a href="https://rimworldgame.com/"&gt;RimWorld&lt;/a&gt;. 
             It is a 2D civiliation manager. 
             The player must manage their resources and keep their people happy as they progress through a technology tree 
@@ -40,7 +40,7 @@
         <description>
             Inspired by some friends in speech class, 
             this project main focus is to learn more about web development and security. 
-            The other goal of this project is to have a place where my friends and I can chat online through without signing into social media.
+            The other goal of this project is to have a place where my friends and I can chat online without signing into social media.
         </description>
         <reports>
             <report date="2018/10/31">
@@ -66,7 +66,7 @@
             A password storage program that encrypts the passwords in a file. 
             This project is hosted on GitHub. 
             You can view it by clicking 
-            &lt;a href="https://github.com/MatthewMateusz/PasswordManager" target="_blank"&gt; here &lt;/a&gt;.
+            &lt;a href="https://github.com/MatthewMateusz/PasswordManager" target="_blank"&gt; here&lt;/a&gt;.
         </description>
         <reports>
             <report date="2018/12/11">
