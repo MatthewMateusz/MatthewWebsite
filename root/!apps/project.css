@@ -26,6 +26,18 @@ section {
     margin-top: -15px;
 }
 
+ul {
+    list-style-type: none;
+}
+
+.report {
+    margin-left: 50px;
+}
+
+span.b {
+    font-weight: bold;
+}
+
 
 /* Project Status*/
 .status {

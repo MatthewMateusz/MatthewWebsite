@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<projects>
+    <project>
+        <id>0001</id>
+        <name>Universal Factory</name>
+        <start>2018/08/11</start>
+        <end>N/A</end>
+        <state>normal</state>
+        <status>restarted</status>
+        <progress>0%</progress>
+        <description>
+            This project is a video game for the PC. This game gets its inspiration from 
+            &lt;a href="https://www.factorio.com/"&gt;Factorio&lt;/a&gt;, 
+            &lt;a href="https://lincity.sourceforge.net/"&gt;Lincity&lt;/a&gt;, and 
+            &lt;a href="https://rimworldgame.com/"&gt;RimWorld&lt;/a&gt;. 
+            It is a 2D civiliation manager. 
+            The player must manage their resources and keep their people happy as they progress through a technology tree 
+            and make their factories more complex.
+        </description>
+        <reports>
+            <report date="2018/11/19">
+                Researching possible game engines to use.
+            </report>
+            <report date="null">
+                Currently in the planning phase of this project. This project is a game for PC.
+            </report>
+        </reports>
+        <mainImg>../_media/images/underConstruction.png</mainImg>
+
+    </project>
+
+    <project>
+        <id>0002</id>
+        <name>Website Live Chat</name>
+        <start>2018/10/30</start>
+        <end>N/A</end>
+        <state>research phase</state>
+        <status>Ok</status>
+        <progress>0%</progress>
+        <description>
+            Inspired by some friends in speech class, 
+            this project main focus is to learn more about web development and security. 
+            The other goal of this project is to have a place where my friends and I can chat online through without signing into social media.
+        </description>
+        <reports>
+            <report date="2018/10/31">
+                I am currently researching how other people have done a live chat on their website. 
+                I am talking with my dad about possible methods of execution.
+            </report>
+            <report date="null">
+                Researching different possible methods to do this.
+            </report>
+        </reports>
+        <mainImg>../_media/images/underConstruction.png</mainImg>
+    </project>
+
+    <project>
+        <id>0003</id>
+        <name>Password Manager</name>
+        <start>N/A</start>
+        <end>N/A</end>
+        <state>Programing phase</state>
+        <status>Ok</status>
+        <progress>80%</progress>
+        <description>
+            A password storage program that encrypts the passwords in a file. 
+            This project is hosted on GitHub. 
+            You can view it by clicking 
+            &lt;a href="https://github.com/MatthewMateusz/PasswordManager" target="_blank"&gt; here &lt;/a&gt;.
+        </description>
+        <reports>
+            <report date="2018/12/11">
+                Most of the programing is done. The only thing left is to actually encrypt the passwords and to debug the whole program.
+            </report>
+            <report date="2018/10/31">
+                Currently programing logic for the project.
+            </report>
+        </reports>
+        <mainImg>../_media/images/underConstruction.png</mainImg>
+    </project>
+</projects>
