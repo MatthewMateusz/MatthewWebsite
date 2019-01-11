@@ -26,6 +26,14 @@
 
         <!--TopNav-->
         <?php
+        function startPath($up) {
+            $return = "";
+            for ($i=0; i < $up; $i++) {
+                $return .= "../";
+            }
+            return $return;
+        }
+
         $path;
         $xml= simplexml_load_file("_resources/topnav.xml") or die ('F');
         echo "<div class='topnav' id='TopNav'>";
@@ -62,11 +70,14 @@
                     $show = $child -> show;
                     if (dirname($rPath) == dirname ($path)) {
                         echo "<a href=". basename($rPath) ."> ". $show ." </a>";
-                    } else if (count(explode("/", $path) < count(explode("/",$rPath)))) {
-
+                    } else {
+                        //Possible to make more effcient, but that is not currently needed
+                        $finalPath = startPath($rRoot). $rPath;
+                        echo "<a href=". $finalPath ."> ".$show." </a>";
                     }
                     
                 } else if ($childTag == "dropdown") {
+                    $finalPath = "";
                     $drpTag = $child -> show;
                     $rPath = $child -> path;
                     
@@ -76,7 +87,9 @@
                     echo "<i class='fa fa-caret-down'></i>";
                     echo "</button>";
                     echo "<div class='dropdown-content'>";
-                    //add links
+                    foreach ($child -> children(link) as $links) {
+
+                    }
                     echo "</div>";
                     echo "</div>";
                 }
@@ -126,7 +139,7 @@
         </div>
 
         <div class="footer">
-            <p>&#9400;2018 Matthew, All Rights Reserved</p>
+            <p>&#9400;2019 Matthew, All Rights Reserved</p>
         </div>
     </body>
 </html>
