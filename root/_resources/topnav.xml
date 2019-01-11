@@ -1,4 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <topnav>
-    
+    <link>
+        <show>Home</show>
+        <path>index.php</path>
+    </link>
+    <link>
+        <show>Links</show>
+        <path>link.php</path>
+    </link>
+    <dropdown>
+        <show>Apps</show>
+        <link>
+            <show>WebApps</show>
+            <path>!apps/webapps.html</path>
+        </link>
+        <link>
+            <show>Projects</show>
+            <path>!apps/project.html</path>
+        </link>
+    </dropdown>
+    <link>
+        <show>Music</show>
+        <path>music.html</path>
+    </link>
+    <dropdown>
+        <show>Other</show>
+        <link>
+            <show>Download Center</show>
+            <path>!other/downloadcenter.html</path>
+        </link>
+        <link>
+            <show>Other Websites</show>
+            <path>!other/otherwebsites.html</path>
+        </link>
+        <link>
+            <show>About</show>
+            <path>!other/about.html</path>
+        </link>
+    </dropdown>
 </topnav>
