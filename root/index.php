@@ -26,77 +26,8 @@
 
         <!--TopNav-->
         <?php
-        function startPath($up) {
-            $return = "";
-            for ($i=0; i < $up; $i++) {
-                $return .= "../";
-            }
-            return $return;
-        }
-
-        $path;
-        $xml= simplexml_load_file("_resources/topnav.xml") or die ('F');
-        echo "<div class='topnav' id='TopNav'>";
-        if ($xml != "F") {
-            foreach ($xml -> children() as $child) {
-                $tagName = $child -> getname();
-                if ($tagName == "link") {
-                    $relativePath = $child -> path;
-                    if (basename($relativePath) == basename(__File__)) {
-                        $path = $relativePath;
-                        break;
-                    }
-                } else if ($tagName == "dropdown") {
-                    foreach ($child -> children() as $cchild) {
-                        $tag = $cchild -> getname();
-                        if ($tag == "link") {
-                            $rp = $cchild -> path;
-                            if (basename($rp) == basename(__File__)) {
-                                $path = $rp;
-                                break;
-                            }
-                        }
-                    }
-                }
-            }
-            
-            foreach ($xml -> children() as $child) {
-                $childTag = $child -> getname();
-                if ($childTag == "link") {
-                    $finalPath = "";
-                    $rPath = $child -> path;
-                    $rRoot = (count(explode("/", $rPath)) -1);
-
-                    $show = $child -> show;
-                    if (dirname($rPath) == dirname ($path)) {
-                        echo "<a href=". basename($rPath) ."> ". $show ." </a>";
-                    } else {
-                        //Possible to make more effcient, but that is not currently needed
-                        $finalPath = startPath($rRoot). $rPath;
-                        echo "<a href=". $finalPath ."> ".$show." </a>";
-                    }
-                    
-                } else if ($childTag == "dropdown") {
-                    $finalPath = "";
-                    $drpTag = $child -> show;
-                    $rPath = $child -> path;
-                    
-                    echo "<div class='dropdown'>";
-                    echo "<button class='dropbtn'>";
-                    echo $drpTag . " ";
-                    echo "<i class='fa fa-caret-down'></i>";
-                    echo "</button>";
-                    echo "<div class='dropdown-content'>";
-                    foreach ($child -> children(link) as $links) {
-
-                    }
-                    echo "</div>";
-                    echo "</div>";
-                }
-            }
-        }
-        echo "<a href='javascript:void(0)' class='icon' onclick='toggleResponsive()'>&#9776;</a>";
-        echo "</div>";
+        include '_resources/library.php';
+        printTopNav("_resources/topnav.xml",__File__);
         ?>
 
         <!-- Main Content -->

@@ -19,33 +19,11 @@
     </head>
 
     <body>
-        <div class="topnav" id="TopNav">
-            <a href="../index.html"> Home </a>
-            <a href="../link.php">Links</a>
-            <div class="dropdown">
-                <button class="dropbtn active">
-                    Apps
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="webapps.html">WebApps</a>
-                    <a href="">Projects</a>
-                </div>
-            </div>
-            <a href="../music.html">Music</a>
-            <div class="dropdown active">
-                <button class="dropbtn">
-                    Other
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="../!other/downloadcenter.html"> Download Center</a>
-                    <a href="../!other/otherwebsites.html"> Other Websites</a>
-                    <a href="../!other/about.html"> About</a>
-                </div>
-            </div>
-            <a href="javascript:void(0)" class="icon" onclick="toggleResponsive()">&#9776;</a>
-        </div>
+        <!--TopNav-->
+        <?php
+        include '../_resources/library.php';
+        printTopNav("../_resources/topnav.xml",__File__);
+        ?>
     
 
         <h1 class="centerText">Matthew's Project</h1>

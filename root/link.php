@@ -24,42 +24,10 @@
 
     <body>
         <!--TopNav-->
-        <div class="topnav" id="TopNav">
-            <a href="index.html"> Home </a>
-            <a href="" class="active"> Links </a>
-            <div class="dropdown">
-                <button class="dropbtn">
-                    Apps
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="!apps/webapps.html">WebApps</a>
-                    <a href="!apps/project.html">Projects</a>
-                </div>
-            </div>
-            <a href="music.html">Music</a>
-            <div class="dropdown">
-                <button class="dropbtn">
-                    Other
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="!other/downloadcenter.html"> Download Center</a>
-                    <a href="!other/otherwebsites.html"> Other Websites</a>
-                    <a href="!other/about.html"> About</a>
-                </div>
-            </div>
-            <a href="javascript:void(0)" class="icon" onclick="toggleResponsive()">&#9776;</a>
-        </div>
-
-        <!--Starting real content-->
-        <div class="note info">
-            <p>
-                <strong>Info:</strong>
-                I am working on a quick-jump function for the different links.
-                For now please use Ctrl+F to search for links and catagories
-            </p>
-        </div>
+        <?php
+        include '_resources/library.php';
+        printTopNav("_resources/topnav.xml",__File__);
+        ?>
 
 
         <?php

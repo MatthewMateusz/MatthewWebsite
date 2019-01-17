@@ -12,30 +12,30 @@
         <show>Apps</show>
         <link>
             <show>WebApps</show>
-            <path>!apps/webapps.html</path>
+            <path>!apps/webapps.php</path>
         </link>
         <link>
             <show>Projects</show>
-            <path>!apps/project.html</path>
+            <path>!apps/project.php</path>
         </link>
     </dropdown>
     <link>
         <show>Music</show>
-        <path>music.html</path>
+        <path>music.php</path>
     </link>
     <dropdown>
         <show>Other</show>
         <link>
             <show>Download Center</show>
-            <path>!other/downloadcenter.html</path>
+            <path>!other/downloadcenter.php</path>
         </link>
         <link>
             <show>Other Websites</show>
-            <path>!other/otherwebsites.html</path>
+            <path>!other/otherwebsites.php</path>
         </link>
         <link>
             <show>About</show>
-            <path>!other/about.html</path>
+            <path>!other/about.php</path>
         </link>
     </dropdown>
 </topnav>
