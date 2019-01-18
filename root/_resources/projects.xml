@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <projects>
     <project>
+        <id>0002</id>
+        <name>Website Live Chat</name>
+        <start>2018/10/30</start>
+        <end>N/A</end>
+        <state>research phase</state>
+        <status>Ok</status>
+        <progress>0%</progress>
+        <description>
+            Inspired by some friends in speech class, 
+            this project main focus is to learn more about web development and security. 
+            The other goal of this project is to have a place where my friends and I can chat online without signing into social media.
+        </description>
+        <reports>
+            <report date="2018/10/31">
+                I am currently researching how other people have done a live chat on their website. 
+                I am talking with my dad about possible methods of execution.
+            </report>
+            <report date="null">
+                Researching different possible methods to do this.
+            </report>
+        </reports>
+        <mainImg>../_media/images/underConstruction.png</mainImg>
+    </project>
+    
+    <project>
         <id>0001</id>
         <name>Universal Factory</name>
         <start>2018/08/11</start>
@@ -27,31 +52,6 @@
         </reports>
         <mainImg>../_media/images/underConstruction.png</mainImg>
 
-    </project>
-
-    <project>
-        <id>0002</id>
-        <name>Website Live Chat</name>
-        <start>2018/10/30</start>
-        <end>N/A</end>
-        <state>research phase</state>
-        <status>Ok</status>
-        <progress>0%</progress>
-        <description>
-            Inspired by some friends in speech class, 
-            this project main focus is to learn more about web development and security. 
-            The other goal of this project is to have a place where my friends and I can chat online without signing into social media.
-        </description>
-        <reports>
-            <report date="2018/10/31">
-                I am currently researching how other people have done a live chat on their website. 
-                I am talking with my dad about possible methods of execution.
-            </report>
-            <report date="null">
-                Researching different possible methods to do this.
-            </report>
-        </reports>
-        <mainImg>../_media/images/underConstruction.png</mainImg>
     </project>
 
     <project>
