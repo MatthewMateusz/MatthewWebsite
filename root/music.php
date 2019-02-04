@@ -26,18 +26,73 @@
         ?>
 
         <!--Actual Content-->
-        <h1 class="centerText">Music Links</h1>
-        <div class="centerText">
+        <div class="centerText spaceAbove">
             <a class="sm fa fa-bandcamp" href="https://matthewmateusz.bandcamp.com/" target="_blank"></a>
             <a class="sm fa fa-soundcloud" href="https://soundcloud.com/matthewmateusz" target="_blank"></a>
             <a class="sm fa fa-youtube" href="https://www.youtube.com/channel/UC49J6yoeGnh1l26f46YybgA/" target="_blank"></a>
         </div>
-        <h1 class="centerText">Music Feed</h1>
-        <p class="centerText">Newest music is always on top</p>
-        <div class="centerText spaceAbove">
-            <!--Put new frames before everything else || after this comment line-->
-            <iframe style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=243250530/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://matthewmateusz.bandcamp.com/track/golden-hour">Golden Hour by MatthewMateusz</a></iframe>
-        </div>
+        
+        <?php
+        getMusicBoxes("_resources/music.xml",__File__);
+        if (isset($_GET['musicid'])) {
+            $xml = simplexml_load_file('_resources/music.xml') or die ('Error loading resource');
+            if ($xml != 'Error loading resource') {
+                foreach ($xml->children() as $release) {
+                    if ($_GET['musicid']==$release['id']) {
+                        //Create content popup
+                        echo '
+                        <div id="musicModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="row padDown">
+                                    <div class="column2">
+                                        <img class="responImage" src="'.$release->imagePath.'">
+                                    </div>
+                                    <div class="column2 relative">
+                                        <span class="musicTitle">'.$release->name.'</span>
+                                    </div>
+                                </div>
+                                Description:<br>
+                                <p class="indentPar">'.$release->description.'</p>
+                                <p>Song(s): <br>
+                                    <ul>        
+                                ';
+                        foreach($release->music->children() as $songName) {
+                            echo '<li>'.$songName['name'].'</li>';
+                        }
+                        echo '
+                                    </ul>
+                                </p>
+
+                                <div class="strongBold">
+                                    Music Links
+                                </div>
+                                <div class="centerText spaceAbove">
+                        ';
+                        foreach($release->media->children() as $link) {
+                            echo '
+                                    <a class="sm fa fa-'.$link['type'].'" href="'.$link.'" target="_blank" download></a>
+                            ';
+                        }
+                        echo'        
+                                </div>
+                                <div class="centerText spaceAbove">
+                                    <span class="strongBold">Other Information</span>
+                                </div>
+                                <p>'.$release->custom.'</p>
+                            </div>
+                        </div>
+                        ';
+                        
+
+                    }
+                }
+            }
+        }
+
+        ?>
+        
+        <script src="_js/modalControl.js"></script>
         
 
 

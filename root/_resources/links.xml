@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <links>
-  <h class="1">Home</h>
-  <h class="2">General</h>
+  <h>Home</h>
   
   <link>
 	<href>https://passwordsgenerator.net/plus/</href>
@@ -20,15 +19,14 @@
     <name>Speed Cubing</name>
   </link>
   
-  <h class="1">School</h>
-  <h class="2">General</h>
+  <h>School</h>
   
   <link>
     <href>http://www.wacohi.net/</href>
     <name>School Website</name>
   </link>
   
-  <h class="2">Music</h>
+  <h>Music</h>
   
   <link>
     <href>https://www.musictheory.net/</href>
@@ -39,23 +37,21 @@
     <name>More Music Theory</name>
   </link>
   
-  <h class="2">English</h>
+  <h>English</h>
   
   <link>
     <href>https://owl.english.purdue.edu/owl/resource/747/01/</href>
     <name>MLA Owl</name>
   </link>
   
-  <h class="2">Science</h>
+  <h>Science</h>
   
   <link>
 	<href>https://ptable.com/</href>
 	<name>Periodic Table</name>
   </link>
   
-  <h class="1">Other</h>
-  <h class="2">Programing and Web Design</h>
-  <h class="3">Website Making</h>
+  <h>Website Making</h>
   
   <link>
     <href>https://www.w3schools.com/</href>
@@ -74,8 +70,7 @@
     <name>HTML Symbol Reference</name>
   </link>
   
-  <h class="2">Gaming</h>
-  <h class="3">Elite: Dangerous</h>
+  <h>Elite: Dangerous</h>
 
   <link>
     <href>https://coriolis.io/</href>
@@ -86,7 +81,7 @@
     <name>Elite Database</name>
   </link>
   
-  <h class="3">Factorio</h>
+  <h>Factorio</h>
   
   <link>
     <href>https://kirkmcdonald.github.io/calc.html#items=s</href>
@@ -97,7 +92,7 @@
     <name>Factorio Wiki</name>
   </link>
   
-  <h class="3">Rimworld</h>
+  <h>Rimworld</h>
   
   <link>
     <href>http://rimworldwiki.com/</href>

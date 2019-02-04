@@ -12,3 +12,46 @@ a {
 a:hover {
         color: #666666;
 }
+
+a.classic {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+a.classic:visited {
+    color: #551A8B;
+}
+
+a.classic:active {
+    color: #EE0000;
+}
+
+.pill {
+    padding: 20px;
+    text-align: center;
+}
+
+.pill a.pill {
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.pill a.pill:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.pill a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.compact {
+    padding: 1px;
+    margin: 1px;
+}

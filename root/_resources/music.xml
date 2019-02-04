@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Different types of music releases:
+1-Single      -> single
+2-EP          -> ep
+3-LP || Album -> lp
+-->
+<music>
+    <release type="single" id="0001">
+        <name>Golden Hour</name>
+        <date>2018/06/10</date>
+        <music>
+            <song name="Golden Hour">_media/music/_LowData_GoldenHour.mp3</song>
+        </music>
+        <imagePath>_media/images/GoldenHourAlbumArtCover.png</imagePath>
+        <description>
+            Nothing much to be said here.
+        </description>
+        <media>
+            <l type="bandcamp">https://matthewmateusz.bandcamp.com/track/golden-hour</l>
+            <l type="soundcloud">https://soundcloud.com/matthewmateusz/golden-hour</l>
+            <!--<l type="youtube">https://youtu.be</l>-->
+            <l type="download">_media/music/_LowData_GoldenHour.mp3</l>
+        </media>
+        <custom>
+            
+        </custom>
+    </release>
+</music>

@@ -1,5 +1,89 @@
 <?php 
 
+function getMusicBoxes ($resource, $__File__) {
+    $xml = simplexml_load_file($resource) or die ('Error loading file');
+    if ($xml != 'Error loading file') {
+        $single = Array();
+        $ep     = Array();
+        $lp     = Array();
+        foreach($xml -> children() as $release) {
+            $type = $release['type'];
+            $id = $release['id'];
+            if ($type == 'single') {
+                array_push($single, $id);
+            } else if ($type =='ep') {
+                array_push($ep, $id);
+            } else {
+                array_push($lp, $id);
+            }
+        }
+        echo '<h1 class="centerText">Matthew&apos;s Music</h1><hr>';
+        echo '<h2>Singles</h2>';
+        //Print all singles
+        echo '<div class="row">';
+        foreach ($single as $i) {
+            foreach ($xml -> children() as $release) {
+                if ($release['id'] == $i) {
+                    echo '<div class="column4">
+                    <div class="card">
+                    <a href="music.php?musicid='.$release['id'].'">';
+                    echo '<img class="responImage" src="'.$release->imagePath.'">';
+                    echo '<p class="link">'.$release->name.'</a></p>';
+                    echo '</div></div>';
+                }
+            }
+        }
+        if (sizeof($single) == 0) {
+            echo '<span class="bold">Looks like nothing has been released yet</span>';
+        }
+        echo '</div>';
+        echo '<hr><h2>EPs</h2>';
+        //Print all eps
+        echo '<div class="row">';
+        foreach($ep as $i) {
+            foreach ($xml->children() as $release) {
+                if ($release['id']==$i) {
+                    echo '<div class="column4">
+                    <div class="card">';
+                    echo '<img class="responImage" src="'.$release->imagePath.'">';
+                    echo '<p class="link"><a href="music.php?musicid='.$release['id'].'">'.$release->name.'</a></p>';
+                    echo '<div></div>';
+                }
+            }
+        }
+        if (sizeof($ep) == 0) {
+            echo '<span class="bold">Looks like nothing has been released yet</span>';
+        }
+        echo '</div>';
+        echo '<hr><h2>Albums</h2>';
+        //print all albums/lps
+        echo '<div class="row">';
+        foreach ($lp as $i) {
+            foreach ($xml->children as $release ) {
+                if ($release['id']==$i) {
+                    echo '<div class="column4">
+                    <div class="card">
+                    <img class="responImage" src="'.$release->imagePath.'">
+                    <p class="link"><a href="music.php?musicid='.$release['id'].'">'.$relase->name.'</a></p>
+                    </div
+                    </div>>';
+                }
+            }
+        }
+        if (sizeof($lp) == 0) {
+            echo '<span class="bold">Looks like nothing has been released yet</span>';
+        }
+        echo '</div>';
+        echo '<hr>';
+    }
+
+}
+
+
+
+
+
+
 
 function printTopNav ($resource, $__File__) {
     function relativeBegining ($up) {
