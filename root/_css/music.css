@@ -110,3 +110,19 @@
 
     }
 }
+
+.QuickNavi {
+    text-align: center;
+    margin: 20px;
+}
+
+.QuickNavi a {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.QuickNavi a:hover{
+    text-decoration: underline;
+}

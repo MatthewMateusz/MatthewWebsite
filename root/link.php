@@ -31,6 +31,7 @@
             $style = 0;
         }
 
+        echo '<p class="centerText">Styles:</p>';
         echo '<div class="pill">';
         if ($style == 0) {
             echo '

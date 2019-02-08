@@ -36,6 +36,14 @@
 			Almost all of the applications on this page should have a corresponding project article.
 			You can find the project page over <a href="project.php" class="default">here</a> or by going under Apps and clicking Projects.
 		</p>
+		<h2 class="centerText">Legend</h2>
+		<p>
+			<ul class="noListStyle">
+				<li><span class="disabled bold">link</span> &rarr; Link is currently disabled</li>
+				<li><span class="enabled bold">link</span> &rarr; Link is currently enabled</li>
+				<li><span class="visited bold">link</span> &rarr; You have visited this link</li>
+			</ul>
+		</p>
 	</div>
 	<br>
 	
@@ -45,7 +53,7 @@
 		<div class="column4">
 			<div class="card">
 				<img class="responImage" src="../_media/images/underConstruction.png">
-				<h3 class="centerText"><a href="" class="disabled">Website Live Chat</a></h3>
+				<p class="centerText"><a href="" class="disabled app">Website Live Chat</a></p>
 			</div>
 		</div>
 	</div>

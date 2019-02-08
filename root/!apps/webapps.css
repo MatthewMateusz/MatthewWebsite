@@ -1,4 +1,9 @@
 
+a.app {
+	font-weight: bold;
+	font-size: 125%;
+}
+
 a.disabled {
     color: red;
     cursor: default;
@@ -10,7 +15,7 @@ a.disabled:hover{
 
 a {
     color: black;
-    text-decoration: none;
+	text-decoration: none;
 }
 
 a:hover {
@@ -28,5 +33,21 @@ a.default{
 }
 
 a.default:visited{
+	color: purple;
+}
+
+.noListStyle {
+	list-style-type: none;
+}
+
+.disabled {
+	color: red;
+}
+
+.enabled {
+	color: blue;
+}
+
+.visited {
 	color: purple;
 }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Attribute => status | 3 varibles
+    -enable    = 0
+    -disable   = 1
+    -noDisplay = 2
+-->
+<downloads>
+    <download status="0" id="0001">
+        <name>Password Manager</name>
+        <link></link>
+        <description>
+            Test description
+        </description>
+        <custom>
+            Custom information
+        </custom>
+        <linkProject></linkProject>
+    </download>
+</downloads>
